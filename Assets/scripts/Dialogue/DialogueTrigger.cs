@@ -21,6 +21,7 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void Update()
     {
+        
         //verificamos se o player esta no range e se o dialo NÃO esta ativo
         if (playerInRanger && !DialogueManeger.GetInstace().dialoguePlaying)
         {
@@ -39,6 +40,8 @@ public class DialogueTrigger : MonoBehaviour
             visualCue.SetActive(false);
         }
     }
+
+
 
     //metodo para quando entrar no trigger
     private void OnTriggerEnter2D(Collider2D collision)

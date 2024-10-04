@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+    private void Update()
+    {
+        pulo();
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -25,7 +29,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
         movimentaco();
-        pulo();
+        
     }
     
 

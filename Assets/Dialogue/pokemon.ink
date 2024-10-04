@@ -1,3 +1,9 @@
+Olá sou professor Carvalho!
+
+Fico responsavel em destribuir os pokemons inicias.
+
+Espero que você tenha pensado bem!
+
 ->main
 
 
@@ -9,9 +15,16 @@ Qual pokemon você escolhe?
         -> choicen("Bulbasauro")
     +[Squirtle]
         -> choicen("Squirtle")
-
+=== gostou ===
+    +[Sim]
+        Ah que otima noticia!
+        ->END
+    +[Não]
+        Ah que pena, então...
+        ->main
+    
 
 === choicen(pokemon)===
 Você escolheu {pokemon}!
-
--> END
+gostou da sua escolha ?
+->gostou
